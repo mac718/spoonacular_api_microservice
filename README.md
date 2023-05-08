@@ -85,4 +85,4 @@ This call produces the following results:
 
 Here is a diagram of the request/response sequence:
 
-![UML]("./CS 361 - UML.vpd")
+![UML](UML.png)
