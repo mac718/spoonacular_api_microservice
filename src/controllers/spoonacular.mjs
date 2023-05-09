@@ -3,7 +3,7 @@ import * as dotenv from "dotenv";
 
 dotenv.config();
 
-export const fetchRecipes = async (req, res) => {
+export const searchRecipes = async (req, res) => {
   const { includeIngredients, excludeIngredients, diet } = req.body;
   const base_url = "https://api.spoonacular.com/recipes/complexSearch";
   try {
