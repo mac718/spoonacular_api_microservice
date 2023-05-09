@@ -10,6 +10,8 @@
 
 By default, the server will run on port 8080. To change the port, change the value of the `port` variable in server.mjs.
 
+If you don't have one already, create a `.env` file in your root directory and add you API key (`API_KEY={your API key}`) and then add that .env file to your .gitignore file.
+
 As of now, the API has one endpoint: `/spoonacular/fetchRecipes`, which will return a list of recipes that can be filtered using `includeIgredients`, `excludeIngredients`, and `diet` criteria. Values for these criteria should be passed from the client in the body of http request. Values for `includeIngredients` and `excludeIngredients` should be strings with each ingredient separated by a comma. Values for diet are also a string, but can be separated by either a comma or a pipe character ('|'). A commas will be interpreted as AND and pipe characters will be interpreted as OR. A list of accepted diet options is available [here](https://spoonacular.com/food-api/docs#Diets). Below is a sample call:
 
 ```
